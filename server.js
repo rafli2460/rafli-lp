@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const port = 8080;
 
 app.use(express.static('public'));
 
@@ -10,6 +9,6 @@ app.get("/", function (req, res) {
   //__dirname : It will resolve to your project folder.
 });
 
-app.listen(port, () => {
-  console.log(`http://localhost:${port}`);
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });

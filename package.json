@@ -1,14 +1,14 @@
 {
   "name": "heroku-deploy",
   "version": "1.0.0",
-  "description": "",
+  "description": "web portofolio tugas akhir dari kode.id",
   "main": "server.js",
   "scripts": {
     "test": "jest",
 
     "start": "node index.js"
   },
-  "author": "",
+  "author": "Muhammad Rafli",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
